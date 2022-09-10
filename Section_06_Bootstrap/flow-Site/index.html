@@ -1,0 +1,204 @@
+<!-- 
+    * navbar-expand-md -> Expands the navbar on the horizontal direction and breaks it when the space gets to a medium (md) size
+    * ms-auto - margin start auto -> Creates a margin on the element start and fill the available space with it (similar to a Spacer) 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>flow</title>
+  <!-- Icon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a9fd41b443.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-md">
+    <!-- Container with the bar elements -->
+    <div class="container-fluid" id="nav-container">
+      <!-- Logo on left -->
+      <a href="" class="navbar-brand p-0">
+        <img src="./images/logo_with_name.png" alt="flow-logo-with-name" id="navbar-logo-image">
+      </a>
+      <!-- Toggle button for the menu items (only shows when screen get too small) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Div with the menu items (only show when screen width is big enough) -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="" class="nav-link me-3">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link me-3">sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link me-3">empresas</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link me-3">blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title -->
+  <section id="title" class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-6 m-auto">
+        <h1 id="title-text">Economize</h1>
+        <h1 id="title-text">Ganhe dinheiro</h1>
+        <h1 id="title-text">Compartilhe</h1>
+        <h3 id="title-subtext">Com a flow você aluga o que quiser, quando quiser e ainda economiza o seu dinheiro.</h3>
+        <button class="btn btn-outline-primary store-button" type="button"><i class="fa-brands fa-google-play store-icon"></i>Play Store</button>
+        <button class="btn btn-dark store-button " type="button"><i class="fa-brands fa-apple store-icon"></i>AppStore</button>
+      </div>
+      <div class="col-md-6 m-auto">
+        <img src="./images/hand_holding_phone.png" id="title-image" alt="phone-mockup">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+  <section class="m-4">
+    <!-- Session title -->
+    <h1 class="mb-5 ms-5" id="features-title">Comece agora</h1>
+    <!-- Row with items -->
+    <div class="row mx-4">
+      <!-- Column item -->
+      <div class="col-lg-3 col-sm-6 text-center feature-item">
+        <div class="center">
+          <i class="fa-solid fa-cloud-arrow-down fa-3x"></i>
+          <h3 class="feature-item-title">Baixe o App</h3>
+          <p>Baixe agora na app store ou na play store</p>
+        </div>
+      </div>
+      <!-- Column item -->
+      <div class="col-lg-3 col-sm-6 text-center feature-item">
+        <div class="center">
+          <i class="fa-solid fa-user fa-3x"></i>
+          <h3 class="feature-item-title">Crie sua conta</h3>
+          <p>Realize o seu cadastro no app, é rápido, fácil e seguro</p>
+        </div>
+      </div>
+      <!-- Column item -->
+      <div class="col-lg-3 col-sm-6 text-center feature-item">
+        <div class="center">
+          <i class="fa-solid fa-cart-shopping fa-3x"></i>
+          <h3 class="feature-item-title">Solicite um produto</h3>
+          <p>Escolha o período de uso e solicite o produto que quiser</p>
+        </div>
+      </div>
+      <!-- Column item -->
+      <div class="col-lg-3 col-sm-6 text-center feature-item">
+        <div class="center">
+          <i class="fa-solid fa-thumbs-up fa-3x"></i>
+          <h3 class="feature-item-title">Desfrute</h3>
+          <p>Receba o produto em sua casa e faça bom uso</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+    <img src="images/dog-img.jpg" alt="dog-profile">
+    <em>Pebbles, New York</em>
+
+    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+    <em>Beverly, Illinois</em> -->
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img src="images/techcrunch.png" alt="tc-logo">
+    <img src="images/tnw.png" alt="tnw-logo">
+    <img src="images/bizinsider.png" alt="biz-insider-logo">
+    <img src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+
+    <h3>Chihuahua</h3>
+    <h2>Free</h2>
+    <p>5 Matches Per Day</p>
+    <p>10 Messages Per Day</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button>
+
+
+    <h3>Labrador</h3>
+    <h2>$49 / mo</h2>
+    <p>Unlimited Matches</p>
+    <p>Unlimited Messages</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button>
+
+
+    <h3>Mastiff</h3>
+    <h2>$99 / mo</h2>
+    <p>Pirority Listing</p>
+    <p>Unlimited Matches</p>
+    <p>Unlimited Messages</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3>Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button">Download</button>
+    <button type="button">Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <p>© Copyright TinDog</p>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>
