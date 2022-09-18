@@ -210,3 +210,29 @@ h2 {
 }
 
 /* ********************************************** */
+
+/* COMBINANDO SELECTORS */
+/*
+- Múltiplos selectors -> selector1, selector2 {}
+h1, h2, h3 {
+    estilo que será aplicado em todos
+}
+
+- selectors hierárquicos -> father child {}
+.classe #id {
+    estilo que será aplicado aos elementos com o id que estão dentro de em elemento da classe
+}
+
+.container-fluid h1 {
+    estilo que será aplicado em todos os elementos h1 que estiverem dentro de um elemento da classe container-fluid
+}
+
+- Selectors combinados -> selector1.selector2 {} ou selector1#selector2 {}
+h1#title {
+    estilo que será aplicado para todos os elementos do tipo h1 que tiverem o id title
+}
+
+.container.container-fluid {
+    estilo aplicado a todos os elementos da classe container que também são da classe container-fluid
+}
+ */
