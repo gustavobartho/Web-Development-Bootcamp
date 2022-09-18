@@ -1,0 +1,339 @@
+<!-- 
+    * navbar-expand-md -> Expands the navbar on the horizontal direction and breaks it when the space gets to a medium (md) size
+    * ms-auto - margin start auto -> Creates a margin on the element start and fill the available space with it (similar to a Spacer) 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>flow</title>
+  <!-- Icon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a9fd41b443.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <!-- Container with the bar elements -->
+    <div class="container-fluid" id="nav-container">
+      <!-- Logo on left -->
+      <a href="" class="navbar-brand p-0">
+        <img src="./images/logo_with_name.png" alt="flow-logo-with-name" id="navbar-logo-image">
+      </a>
+      <!-- Toggle button for the menu items (only shows when screen get too small) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Div with the menu items (only show when screen width is big enough) -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a href="#footer" class="nav-link me-3">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricing" class="nav-link me-3">sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#download" class="nav-link me-3">empresas</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link me-3">blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- *************************************************** -->
+
+  <!-- Title -->
+  <section id="title">
+
+    <!-- Row with items -->
+    <div class="row">
+      <!-- Left column with text and store buttons -->
+      <div class="col-md-8 m-auto">
+        <h1 id="title-text">Economize</h1>
+        <h1 id="title-text">Ganhe dinheiro</h1>
+        <h1 id="title-text">Compartilhe</h1>
+        <h3 id="title-subtext">Com a flow você aluga o que quiser, quando quiser e ainda economiza o seu dinheiro.</h3>
+        <button class="btn btn-primary store-button" type="button"><i class="fa-brands fa-google-play store-icon"></i>Play Store</button>
+        <button class="btn btn-dark store-button " type="button"><i class="fa-brands fa-apple store-icon"></i>AppStore</button>
+      </div>
+      <!-- Right column with image -->
+      <div class="col-md-4 align-self-end">
+        <img src="./images/hand_holding_phone.png" id="title-image" alt="phone-mockup">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- *************************************************** -->
+
+  <!-- Features -->
+  <section id="features">
+
+    <!-- Title -->
+    <h1 id="features-title">Comece agora</h1>
+
+
+    <!-- Row with items -->
+    <div class="row text-center g-4">
+      <!-- Column item -->
+      <div class="col-lg-3 col-md-6">
+        <div class=" feature-item">
+          <i class="fa-solid fa-cloud-arrow-down fa-3x"></i>
+          <h3 class="feature-item-title">Baixe o App</h3>
+          <p>Baixe agora na app store ou na play store</p>
+        </div>
+      </div>
+      <!-- Column item -->
+      <div class="col-lg-3 col-md-6 ">
+        <div class=" feature-item">
+          <i class="fa-solid fa-user fa-3x"></i>
+          <h3 class="feature-item-title">Crie sua conta</h3>
+          <p>Realize o seu cadastro no app, é rápido, fácil e seguro</p>
+        </div>
+      </div>
+      <!-- Column item -->
+      <div class="col-lg-3 col-md-6">
+        <div class=" feature-item">
+          <i class="fa-solid fa-cart-shopping fa-3x"></i>
+          <h3 class="feature-item-title">Solicite um produto</h3>
+          <p>Escolha o período de uso e solicite o produto que quiser</p>
+        </div>
+      </div>
+      <!-- Column item -->
+      <div class="col-lg-3 col-md-6">
+        <div class=" feature-item">
+          <i class="fa-solid fa-thumbs-up fa-3x"></i>
+          <h3 class="feature-item-title">Desfrute</h3>
+          <p>Receba o produto em sua casa e faça bom uso</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- *************************************************** -->
+
+
+  <!-- Testimonials -->
+  <section id="advantages">
+    <!-- Carousel -->
+    <div id="advantages-carousel" class="carousel carousel-dark slide" data-bs-ride="false">
+
+      <!-- Carousel pagination -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#advantages-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide 1"></button>
+        <button type="button" data-bs-target="#advantages-carousel" data-bs-slide-to="1" aria-label="slide 2"></button>
+      </div>
+
+      <!-- Carousel previous buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#advantages-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <!-- Carousel next button -->
+      <button class="carousel-control-next" type="button" data-bs-target="#advantages-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <!-- Carousel inner content -->
+      <div class="carousel-inner">
+
+        <!-- Carousel first slide -->
+        <div class="carousel-item active advantage-carousel-item">
+          <!-- Slide title -->
+          <h1 class="advantages-title">Não é comprar, mas é quase</h1>
+          <!-- Slide items -->
+          <div>
+            <!-- First item -->
+            <div class="d-flex align-items-center advantages-item">
+              <div>
+                <i class="fa-solid fa-check fa-3x advantages-item-icon"></i>
+              </div>
+              <div>
+                <h4 class="advantages-item-title">Economize</h4>
+                <h4>Economize no produto que solicitar pagando muito menos do que comprando</h4>
+              </div>
+            </div>
+            <!-- Second item -->
+            <div class="d-flex align-items-center advantages-item">
+              <div>
+                <i class="fa-solid fa-check fa-3x advantages-item-icon"></i>
+              </div>
+              <div>
+                <h4 class="advantages-item-title">Receba em sua casa</h4>
+                <h4>Receba diretamente em sua porta o produto que solicitar, basta escolher a melhor modalidade de entrega para você</h4>
+              </div>
+            </div>
+            <!-- Third item -->
+            <div class="d-flex align-items-center advantages-item">
+              <div>
+                <i class="fa-solid fa-check fa-3x advantages-item-icon"></i>
+              </div>
+              <div>
+                <h4 class="advantages-item-title">Pague pelo app</h4>
+                <h4>Cadastre seu cartão de crédito no app e pague seu pedido na hora, com conforto e segurança</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel second slide -->
+        <div class="carousel-item advantage-carousel-item">
+          <!-- Slide title -->
+          <h1 class="advantages-title">Não é vender, mas é quase</h1>
+          <!-- Slide items -->
+          <div>
+            <!-- First item -->
+            <div class="d-flex align-items-center advantages-item">
+              <div>
+                <i class="fa-solid fa-check fa-3x advantages-item-icon"></i>
+              </div>
+              <div>
+                <h4 class="advantages-item-title">Ganhe dinheiro</h4>
+                <h4>Ganhe dinheiro compartilhando seu produto, ele continua sendo seu e você pode fazer muito mais dinheiro com ele</h4>
+              </div>
+            </div>
+            <!-- Second item -->
+            <div class="d-flex align-items-center advantages-item">
+              <div>
+                <i class="fa-solid fa-check fa-3x advantages-item-icon"></i>
+              </div>
+              <div>
+                <h4 class="advantages-item-title">Tudo sem sair de casa</h4>
+                <h4>Buscamos e entregamos os produtos em sua casa, no dia e horário marcado para o aluguel</h4>
+              </div>
+            </div>
+            <!-- Third item -->
+            <div class="d-flex align-items-center advantages-item">
+              <div>
+                <i class="fa-solid fa-check fa-3x advantages-item-icon"></i>
+              </div>
+              <div>
+                <h4 class="advantages-item-title">Receba seu dinheiro direto em sua conta</h4>
+                <h4>Cadastre sua conta corrente no app e receba seu dinheiro diretamente nela</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- *************************************************** -->
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <div id="pricing-title-section">
+      <h2>A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for your and your dog.</p>
+    </div>
+
+    <div class="row text-center g-3">
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <div class="d-grid">
+              <button class="btn btn-lg btn-outline-primary" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <div class="d-grid">
+              <button class="btn btn-lg btn-primary" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class=" card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Priority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <div class="d-grid">
+              <button class="btn btn-lg btn-primary" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- *************************************************** -->
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 id="cta-title">Find the True Love of Your Dog's Life Today.</h3>
+    <button class="btn btn-primary store-button" type="button"><i class="fa-brands fa-google-play store-icon"></i>Play Store</button>
+    <button class="btn btn-dark store-button " type="button"><i class="fa-brands fa-apple store-icon"></i>AppStore</button>
+
+  </section>
+
+  <!-- *************************************************** -->
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <a class="footer-sn-link" href=""><i class="fa-brands fa-square-facebook d-inline fa-1x"></i></a>
+    <a class="footer-sn-link" href=""><i class="fa-brands fa-square-instagram d-inline fa-1x"></i></a>
+    <a class="footer-sn-link" href=""><i class="fa-brands fa-linkedin d-inline fa-1x"></i></a>
+    <a class="footer-sn-link" href=""><i class="fa-brands fa-square-twitter d-inline fa-1x"></i></a>
+
+    <p>© Copyright TinDog</p>
+
+  </footer>
+
+  <!-- *************************************************** -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>

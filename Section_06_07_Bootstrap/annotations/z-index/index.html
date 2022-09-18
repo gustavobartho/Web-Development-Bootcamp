@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            position: absolute;
+        }
+
+        /* 
+        o z-index padrão para todos os elementos é zero, 
+        mudar o z-index faz os objetos se sobreporem de formas diferentes 
+        mudar o z-index só faz diferença se os elementos estiverem empilhados (position diferente de static)
+        */
+
+        .red {
+            background-color: red;
+            z-index: 1;
+        }
+
+        .blue {
+            background-color: blue;
+            left: 30px;
+            top: 30px;
+        }
+
+        .green {
+            background-color: green;
+            left: 60px;
+            top: 60px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        RED
+    </div>
+    <div class="blue">
+        BLUE
+    </div>
+    <div class=green>
+        GREEN
+    </div>
+
+</body>
+
+</html>
