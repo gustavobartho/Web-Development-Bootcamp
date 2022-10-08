@@ -45,5 +45,6 @@ function handleClick(currentKey) {
 function buttonAnimation(currentKey) {
     let activeButton = document.querySelector('.' + currentKey);
     activeButton.classList.add('pressed');
+    // Sets a timeout to run the callback function
     setTimeout(() => activeButton.classList.remove('pressed'), 200);
 }
