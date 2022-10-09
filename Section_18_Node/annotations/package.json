@@ -1,0 +1,14 @@
+{
+  "name": "annotations",
+  "version": "1.0.0",
+  "description": "Intro to Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo B.",
+  "license": "ISC",
+  "dependencies": {
+    "superheroes": "^3.0.0"
+  }
+}
