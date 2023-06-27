@@ -1,0 +1,238 @@
+body {
+    background-color: #FFFAF8F8;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+
+
+/* ********************************************** */
+
+/* Navbar *****************************/
+
+.navbar {
+    background-color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 2px;
+}
+
+.nav-link {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#nav-container {
+    padding: 0 4%;
+}
+
+#navbar-logo-image {
+    height: 2.2rem;
+}
+
+/* Title Section *****************************/
+
+#title {
+    background-color: #054DAB;
+    padding: 3% 10% 0;
+    overflow: hidden;
+}
+
+#title-image {
+    width: 100%;
+    max-width: 350px;
+    min-width: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#title-text {
+    color: white;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.3;
+}
+
+#title-subtext {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 5% 0 0;
+}
+
+.store-button {
+    color: white;
+    margin: 8% 3% 8% 0;
+    padding: 13px 0;
+    width: 180px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.store-icon {
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    #title {
+        text-align: center;
+    }
+
+    #title-image {
+        max-width: 300px;
+        min-width: 250px;
+    }
+
+    #title-text {
+        font-size: 3rem;
+    }
+}
+
+/* Features Section *****************************/
+
+#features {
+    padding: 4% 7%;
+}
+
+#features-title {
+    font-weight: 800;
+    font-size: 50px;
+    color: #1F3E66;
+    margin-bottom: 5%;
+}
+
+.feature-item {
+    min-height: 240px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    color: #1F3E66;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.feature-item:hover {
+    color: white;
+    background-color: #054DAB;
+}
+
+.feature-item-title {
+    margin: 10px;
+    font-weight: 700;
+}
+
+/* Advantage Section *****************************/
+
+#advantages {
+    text-align: center;
+    color: black;
+    background-color: #E1EEFE;
+    padding: 5% 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-bottom: -10%;
+}
+
+.advantage-carousel-item {
+    padding: 0 12%;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.advantages-title {
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.advantages-item {
+    margin-bottom: 2%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.advantages-item-icon {
+    margin-right: 20px;
+    color: #054DAB;
+}
+
+.advantages-item-title {
+    font-weight: 800;
+}
+
+/* Pricing Section *****************************/
+
+#pricing {
+    padding: 4% 7%;
+}
+
+#pricing-title-section {
+    padding-bottom: 3%;
+}
+
+/* Call to action *****************************/
+
+#cta {
+    text-align: center;
+    background-color: #054DAB;
+    padding: 5% 25% 2%;
+    margin: 2% 0;
+}
+
+
+#cta-title {
+    font-weight: 800;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+/* Footer *****************************/
+
+#footer {
+    padding: 15px 0;
+    text-align: center;
+    color: gray;
+}
+
+.footer-sn-link {
+    color: gray;
+    margin: 0 5px;
+}
+
+/* ********************************************** */
+
+/* COMBINANDO SELECTORS */
+/*
+- Múltiplos selectors -> selector1, selector2 {}
+h1, h2, h3 {
+    estilo que será aplicado em todos
+}
+
+- selectors hierárquicos -> father child {}
+.classe #id {
+    estilo que será aplicado aos elementos com o id que estão dentro de em elemento da classe
+}
+
+.container-fluid h1 {
+    estilo que será aplicado em todos os elementos h1 que estiverem dentro de um elemento da classe container-fluid
+}
+
+- Selectors combinados -> selector1.selector2 {} ou selector1#selector2 {}
+h1#title {
+    estilo que será aplicado para todos os elementos do tipo h1 que tiverem o id title
+}
+
+.container.container-fluid {
+    estilo aplicado a todos os elementos da classe container que também são da classe container-fluid
+}
+ */

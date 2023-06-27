@@ -1,0 +1,8 @@
+* States
+    The UI is a function of the app's State - UI = f(State)
+    UI changes are reflecting the changes in the state
+    Declarative Programming - We declare how the UI should look under different conditions dependent upon the state
+
+    * Hooks - Functions that allow us to hook into the state of the app and read or modify it
+        - useState() -> Returns an array with two elements, the first one is the state variable and the second is the state changing function
+        const [stateVar, setStateVar] = useState()
