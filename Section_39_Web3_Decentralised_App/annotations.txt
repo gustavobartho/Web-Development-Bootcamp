@@ -2,7 +2,12 @@ Web3 - Describes the 3rd stage of the web
 
 Blockchain Demo - https://gugger.guru/blockchain-demo/#!/
 
+-> remove git from sub folder
+rm -rf .git
 
-fix webpack errors:
+-> add folder to main git project
+git rm -r --cached <subfolder>
+
+-> fix webpack errors:
 npm install --save-dev webpack-cli
 npm upgrade --save-dev webpack-cli
